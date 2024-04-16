@@ -9,6 +9,7 @@ terraform {
 
 resource "azurerm_resource_group" "this" {
   name     = "storage-account-resources"
+  location = "placeholder"
 }
 
 resource "azurerm_storage_account" "this" {
