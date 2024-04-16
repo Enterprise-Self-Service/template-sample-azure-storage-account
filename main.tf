@@ -9,7 +9,6 @@ terraform {
 
 resource "azurerm_resource_group" "this" {
   name     = "storage-account-resources"
-  location = var.region
 }
 
 resource "azurerm_storage_account" "this" {
@@ -23,10 +22,4 @@ resource "azurerm_storage_account" "this" {
 variable "storage_account_name" {
   type = string
   description = "The name of the storage account you will create"
-}
-
-
-variable "region" {
-  type = string
-  description = "The region to which you will deploy"
 }
