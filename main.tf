@@ -24,3 +24,8 @@ variable "storage_account_name" {
   type = string
   description = "The name of the storage account you will create"
 }
+
+variable "resource_group" {
+  type = string
+  description = "The name of the resource group to add the storage account to"
+}
